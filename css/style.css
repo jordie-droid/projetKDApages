@@ -1,32 +1,32 @@
-@font-face{
+@font-face {
     font-family: "roboto";
     src: url("../fonts/Roboto-Bold.ttf");
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.mainContainer{
+.mainContainer {
     display: flex;
     flex-direction: column;
 }
 
-header{
+header {
     display: flex;
     flex-direction: row;
-    background-color: #db4d51;
+    background-color: #d92950;
     justify-content: space-between;
     position: fixed;
     width: 100%;
     font-family: 'roboto';
     height: 90px;
-    top:0;
+    top: 0;
     z-index: 9999;
 }
 
-.logo{
+.logo {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -35,11 +35,11 @@ header{
     padding-bottom: 15px;
 }
 
-.logo img{
+.logo img {
     width: 100px;
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -47,7 +47,7 @@ nav{
     align-items: center;
 }
 
-a.nav-item::after{
+a.nav-item::after {
     content: '';
     display: block;
     width: 0;
@@ -55,12 +55,12 @@ a.nav-item::after{
     background: #e8566a;
 }
 
-a.nav-item:hover::after{
+a.nav-item:hover::after {
     width: 100%;
     transition: width .3s;
 }
 
-a.active::after{
+a.active::after {
     content: '';
     display: block;
     width: 100%;
@@ -69,33 +69,33 @@ a.active::after{
     background: #e8566a;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     color: white;
 }
 
-li{
-    display:inline-block;
+li {
+    display: inline-block;
     margin: 40px;
 }
 
-.besoin{
+.besoin {
     margin-top: 90px;
-    background-color: #db4d51;
+    background-color: #d92950;
     background-image: url("../images/hero-background.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:100px;
+    padding: 100px;
 }
 
-@font-face{
+@font-face {
     font-family: "monserrat";
     src: url("../fonts/Montserrat-Black.ttf");
 }
 
-section .besoin h1{
+section .besoin h1 {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 75px;
@@ -105,24 +105,24 @@ section .besoin h1{
     line-height: 1.2;
 }
 
-section .besoin h1 span{
+section .besoin h1 span {
     color: #ffe64d;
 }
 
-#qualif::before{
+#qualif::before {
     content: '<';
 }
 
-#qualif::after{
+#qualif::after {
     content: '>';
 }
 
-#question-mark{
+#question-mark {
     color: #ffe64d;
     content: '';
 }
 
-.link-button{
+.link-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -130,7 +130,7 @@ section .besoin h1 span{
     padding-top: 20px;
 }
 
-.link-button a{
+.link-button a {
     margin: 10px;
     text-decoration: none;
     background-color: white;
@@ -144,7 +144,7 @@ section .besoin h1 span{
     border-radius: 15px;
 }
 
-.link-button a:hover{
+.link-button a:hover {
     margin: 10px;
     text-decoration: none;
     background-color: #d92950;
@@ -159,12 +159,12 @@ section .besoin h1 span{
     outline: none;
 }
 
-@font-face{
+@font-face {
     font-family: "monserrat-light";
     src: url("../fonts/Montserrat-Light.ttf");
 }
 
-.besoin p{
+.besoin p {
     color: #fff;
     font-family: 'monserrat-light';
     font-size: 16px;
@@ -174,7 +174,7 @@ section .besoin h1 span{
     margin-top: 20px;
 }
 
-.besoin img{
+.besoin img {
     opacity: 0.5;
     width: 53px;
     height: 45px;
@@ -182,7 +182,7 @@ section .besoin h1 span{
     margin: 0px 55px;
 }
 
-.image-header{
+.image-header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -190,7 +190,7 @@ section .besoin h1 span{
     padding-bottom: 48px;
 }
 
-.des-developpeurs{
+.des-developpeurs {
     background-color: #f1f0f3;
     padding-top: 100px;
     padding-bottom: 50px;
@@ -207,7 +207,7 @@ section .besoin h1 span{
     height: 500px;
 }
 
-.des-developpeurs .batiment-salle #texaf{
+.des-developpeurs .batiment-salle #texaf {
     width: 520px;
     height: 390px;
     border-bottom-right-radius: 20px;
@@ -216,7 +216,7 @@ section .besoin h1 span{
     left: -70px;
 }
 
-.des-developpeurs .batiment-salle #cohorte{
+.des-developpeurs .batiment-salle #cohorte {
     width: 347px;
     height: 260px;
     border-bottom-right-radius: 20px;
@@ -226,12 +226,12 @@ section .besoin h1 span{
     top: -195px;
 }
 
-@font-face{
+@font-face {
     font-family: "monserrat-regular";
     src: url("../fonts/Montserrat-Bold.ttf");
 }
 
-.des-developpeurs .developpeurs{
+.des-developpeurs .developpeurs {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -240,33 +240,33 @@ section .besoin h1 span{
     left: -90px;
 }
 
-.des-developpeurs .developpeurs .paragraphe{
+.des-developpeurs .developpeurs .paragraphe {
     font-family: 'monserrat-regular';
     font-weight: 700;
     font-size: 40px;
 }
 
-.des-developpeurs .developpeurs .paragraphe span::before{
+.des-developpeurs .developpeurs .paragraphe span::before {
     content: '<';
 }
 
-.des-developpeurs .developpeurs .paragraphe span::after{
+.des-developpeurs .developpeurs .paragraphe span::after {
     content: '>';
 }
 
-.des-developpeurs .developpeurs .flex-developpeurs{
+.des-developpeurs .developpeurs .flex-developpeurs {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.des-developpeurs .developpeurs .flex-developpeurs .sous-bloc-developpeur{
+.des-developpeurs .developpeurs .flex-developpeurs .sous-bloc-developpeur {
     text-align: center;
     font-family: 'monserrat-regular';
     font-size: 20px;
 }
 
-.des-developpeurs .developpeurs .flex-developpeurs .sous-bloc-developpeur img{
+.des-developpeurs .developpeurs .flex-developpeurs .sous-bloc-developpeur img {
     width: 50px;
     height: 64px;
     padding-top: 50px;
@@ -275,6 +275,319 @@ section .besoin h1 span{
     margin-bottom: 20px;
 }
 
-.parteneurs{
-    background-color: #db4d51;
+.parteneurs {
+    background-color: #d92950;
+    display: flex;
+    flex-direction: column;
+}
+
+.parteneurs .paragraphe {
+    font-family: 'monserrat-regular';
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.parteneurs .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    /* overflow: hidden; */
+}
+
+.slides {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation: flotter 15s infinite;
+    /* overflow: hidden; */
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.imagecontainer {
+    margin-top: 100px;
+    max-height: 200px;
+    /* width: 260px; */
+    text-align: center;
+    /* position: relative; */
+    /* left: 920px; */
+}
+
+/* @keyframes flotter{
+    0%{
+        transform: translateX(0px);
+    }
+    5%{
+        transform: translateX(0px);
+    }
+    10%{
+        transform: translateX(-410px);
+    }
+    15%{
+        transform: translateX(-410px);
+    }
+    20%{
+        transform: translateX(-650px);
+    }
+    25%{
+        transform: translateX(-650px);
+    }
+    30%{
+        transform: translateX(-950px);
+    }
+    35%{
+        transform: translateX(-950px);
+    }
+    40%{
+        transform: translateX(-1200px);
+    }
+    45%{
+        transform: translateX(-1200px);
+    }
+    50%{
+        transform: translateX(-1450px);
+    }
+    55%{
+        transform: translateX(-1450px);
+    }
+    60%{
+        transform: translateX(-1700px);
+    }
+    65%{
+        transform: translateX(-1700px);
+    }
+} */
+
+.accompagnement {
+    background-color: #f1f0f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.accompagnement>p {
+    color: #392546;
+    font-family: 'monserrat-regular';
+    font-size: 44px;
+    font-weight: 700;
+    margin: 50px 0px 50px;
+}
+
+.accompagnement .accompagnements-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.accompagnement .accompagnements-one .realisation {
+    width: 40%;
+    background-color: #fff;
+    margin-right: 15px;
+    border-top: solid 10px #ffe64d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0px 20px;
+}
+
+.accompagnement .accompagnements-one .realisation :nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #392546;
+    font-family: 'monserrat-light';
+    font-size: 16px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.accompagnement .accompagnements-one .realisation :nth-child(1) {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #d92950;
+    font-family: 'monserrat-regular';
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.accompagnement .accompagnements-one .realisation a {
+    margin: 30px;
+    text-decoration: none;
+    background-color: #d92950;
+    border: solid 2px #d92950;
+    padding: 20px 30px;
+    font-family: 'roboto';
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+
+
+.accompagnement .accompagnements-one .realisation a:hover {
+    margin: 30px;
+    text-decoration: none;
+    background-color: #fff;
+    border: solid 2px #d92950;
+    padding: 20px 30px;
+    font-family: 'roboto';
+    color: #d92950;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+
+.accompagnement .accompagnements-one .integration {
+    width: 40%;
+    background-color: #fff;
+    margin-left: 15px;
+    border-top: solid 10px #db4d51;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0px 20px;
+}
+
+.accompagnement .accompagnements-one .integration :nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #392546;
+    font-family: 'monserrat-light';
+    font-size: 16px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.accompagnement .accompagnements-one .integration :nth-child(1) {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #d92950;
+    font-family: 'monserrat-regular';
+    font-size: 33px;
+}
+
+.accompagnement .accompagnements-one .integration a {
+    text-decoration: none;
+    background-color: #d92950;
+    border: solid 2px #d92950;
+    padding: 20px 30px;
+    font-family: 'roboto';
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 15px;
+    margin: 30px 0 40px 0;
+}
+
+.accompagnement .accompagnements-one .integration a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    border: solid 2px #d92950;
+    padding: 20px 30px;
+    font-family: 'roboto';
+    color: #d92950;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 15px;
+    margin: 30px 0 40px 0;
+}
+
+.produit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d92950;
+}
+
+.produit .produit-flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.produit .produit-flex-row .produit-image img{
+    border-radius: 20px;
+    margin: 0 30px;
+    width: 330px;
+    height: 460px;
+}
+
+.produit-image .image-client{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    position: relative;
+    left: 30px;
+}
+
+.produit-image .image-client a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.produit-client{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.produit-image .logo-client{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.produit>p{
+    color:#ffffff;
+    font-family: 'monserrat-regular';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 100px 0px 100px;
+}
+
+.pays{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #d92950;
+    background-color: #fff;
+    position: relative;
+    left: 20px;
+    padding-right: 10px;
+}
+
+.pays svg{
+    margin-right: 20px;
+}
+
+.badge{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
 }
