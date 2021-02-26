@@ -74,7 +74,7 @@ ul li a {
     color: white;
 }
 
-li {
+ul li {
     display: inline-block;
     margin: 40px;
 }
@@ -301,7 +301,7 @@ section .besoin h1 span {
 .slides {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     animation: flotter 15s infinite;
     /* overflow: hidden; */
 }
@@ -317,6 +317,8 @@ section .besoin h1 span {
 .imagecontainer {
     margin-top: 100px;
     max-height: 200px;
+    margin-right: 50px;
+    margin-left: 50px;
     /* width: 260px; */
     text-align: center;
     /* position: relative; */
@@ -519,12 +521,19 @@ section .besoin h1 span {
     flex-direction: column;
     align-items: center;
     background-color: #d92950;
+    padding-bottom: 100px;
 }
 
 .produit .produit-flex-row{
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.produit-image{
+    font-family: 'Montserrat-Light';
+    font-size: 15.2px;
+    line-height: 16.8px;
 }
 
 .produit .produit-flex-row .produit-image img{
@@ -551,7 +560,7 @@ section .besoin h1 span {
 .produit-client{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     color: #fff;
 }
 
@@ -572,12 +581,16 @@ section .besoin h1 span {
 
 .pays{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    color: #d92950;
-    background-color: #fff;
     position: relative;
-    left: 20px;
+    background-color: #fff;
+    color: #d92950;
+    margin-right: 60px;
+    height: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding-right: 10px;
 }
 
@@ -588,6 +601,146 @@ section .besoin h1 span {
 .badge{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     color: #fff;
+    margin-top: 15px;
+    font-size: 11.2px;
+    background-color: #ed0058;
+    width: 300px;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+.produit-flex-row button{
+    background-color: #fff;
+    width: 20px;
+    height: 19px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 100px;
+    color: #d92950;
+}
+
+.produit-flex-row button:focus{
+    background-color: #fff;
+    width: 20px;
+    height: 19px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+}
+
+.expertise{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.expertise>.title{
+    font-family: 'monserrat-regular';
+    font-size: 40px;
+    font-weight: 700;
+    color: #424345;
+    text-align: center;
+}
+
+.expertise .element{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hardskill{
+    display: flex;
+    flex-direction: column;
+    width: 47.5%;
+    margin-left: 70px;
+}
+
+.hardskill .title{
+    background-color: #d92950;
+    color: #ffffff;
+    font-family: 'monserrat-regular';
+    font-size: 28px;
+    font-weight: 700;
+    padding: 20px 20px;
+    margin-top: 50px;
+}
+
+@font-face{
+    font-family: "ubuntu-mono";
+    src: url("../fonts/UbuntuMono-Regular.ttf");
+}
+
+.hardskill .hardcite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 50px;
+    text-align: center;
+    color:#424345;
+    background-color: #f1f0f3;
+    font-family: 'ubuntu-mono';
+    font-size: 20.8px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hardcite svg{
+    width: 45px;
+    height: 45px;
+}
+
+.hardcite p{
+    margin-bottom: 20px;
+}
+
+.hardcite .col{
+    margin-bottom: 50px;
+}
+
+.softskill{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 50px;
+    margin-right: 70px;
+    background-color: #f1f0f3;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.softskill .title{
+    background-color: #331F40;
+    color: #ffffff;
+    font-family: 'monserrat-regular';
+    font-size: 28px;
+    font-weight: 700;
+    padding: 20px 20px;
+}
+
+.softskill ol{
+    margin-left: 50px;
+}
+
+.softskill .element{
+    padding: 20px;
+    background-color: #dfdee1;
+    margin: 0 50px;
+    margin-top: 35px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+    color: #424345;
+    font-family: 'ubuntu-mono';
+    font-size: 20.8px;
+    line-height: 31.2px;
+    font-weight: 40px;
+}
+
+.pret{
+    background-color: #d92950;
 }
