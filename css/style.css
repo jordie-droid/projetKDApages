@@ -171,7 +171,7 @@ section .besoin h1 span {
     color: #fff;
     font-family: 'monserrat-light';
     font-size: 16px;
-    font-weight: 400px;
+    font-weight: 400;
     line-height: 1.5;
     text-align: center;
     margin-top: 20px;
@@ -743,7 +743,6 @@ section .besoin h1 span {
     font-family: 'ubuntu-mono';
     font-size: 20.8px;
     line-height: 31.2px;
-    font-weight: 40px;
 }
 
 .pret{
@@ -847,7 +846,7 @@ section .besoin h1 span {
 
 .pre-cont-img .call{
     width: 34px;
-    height: 40;
+    height: 40px;
 }
 
 .pre-cont-img #users{
@@ -1357,7 +1356,7 @@ address{
 
 .section-container-whithout-form .sous-container-section .my-sous{
     width: 494px;
-    height: 1099;
+    height: 1099px;
     margin-left: 25px;
     padding: 40px;
     background-color: #f1f0f3;
