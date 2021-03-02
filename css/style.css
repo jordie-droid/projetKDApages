@@ -1302,7 +1302,7 @@ address{
 }
 
 .mailcont{
-    margin-bottom: 200px;
+    margin-bottom: 275px;
 }
 
 .sous-footer2 a{
@@ -1420,4 +1420,18 @@ address{
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    right: 20px;
+    margin-top: 50px;
+}
+
+.footer-logo img{
+    width: 50px;
+    height: 40px;
 }
