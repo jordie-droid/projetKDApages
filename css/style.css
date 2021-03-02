@@ -21,7 +21,7 @@ header {
     position: fixed;
     width: 100%;
     font-family: 'roboto';
-    height: 90px;
+    height: 80px;
     top: 0;
     z-index: 9999;
 }
@@ -32,11 +32,12 @@ header {
     justify-content: flex-start;
     padding-top: 15px;
     padding-left: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
 .logo img {
     width: 100px;
+    height: 50px;
 }
 
 nav {
@@ -79,7 +80,7 @@ nav ul li a:hover::after {
 
 nav ul li {
     display: inline-block;
-    margin: 40px;
+    margin: 30px;
 }
 
 .besoin {
