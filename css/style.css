@@ -1065,11 +1065,11 @@ form{
 .element2{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     font-family: 'monserrat-regular';
     font-size: 10px;
     color: #f1f0f3;
-    justify-content: center;
 }
 
 .element2 label{
@@ -1222,13 +1222,16 @@ form{
 
 footer{
     background-color: #2d2d2d;
-    padding: 100px 100px;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
 }
 
 footer .myfooter{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 85%;
 }
 
 .sous-footer1 strong{
@@ -1274,7 +1277,7 @@ address{
 }
 
 .mailcont input{
-    width: 395px;
+    width: 390px;
     height: 45px;
     padding: 10px;
     font-family: 'roboto-regular';
