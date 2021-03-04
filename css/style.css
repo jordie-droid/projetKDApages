@@ -274,7 +274,7 @@ section .besoin h1 span {
     width: 50px;
     height: 64px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     border-bottom: solid 2px #e94c23;
     margin-bottom: 20px;
 }
@@ -283,6 +283,8 @@ section .besoin h1 span {
     background-color: #d92950;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
 }
 
 .parteneurs .paragraphe {
@@ -291,88 +293,95 @@ section .besoin h1 span {
     font-weight: 700;
     font-size: 40px;
     color: #fff;
-    margin-top: 100px;
 }
 
 .parteneurs .logo {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
-    /* overflow: hidden; */
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    width: 85%;
+    overflow: hidden;
 }
 
 .slides {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    animation: flotter 15s infinite;
-    /* overflow: hidden; */
+    justify-content: center;
+    width: 100%;
 }
 
 .slide {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
+    width: auto;
+}
+
+.slide .imagecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 130px;
+    padding: 0 50px;
+    height: 200px;
+    position: relative;
+    left: 807px;
+    /* animation: flotter 15s infinite; */
+}
+
+.slide .imagecontainer img{
     width: 100%;
+    height: auto;
+    animation: flotter 15s infinite;
 }
 
-.imagecontainer {
-    margin-top: 100px;
-    max-height: 200px;
-    margin-right: 50px;
-    margin-left: 50px;
-    /* width: 260px; */
-    text-align: center;
-    /* position: relative; */
-    /* left: 920px; */
-}
-
-/* @keyframes flotter{
+@keyframes flotter{
     0%{
         transform: translateX(0px);
     }
-    5%{
+    10%{
         transform: translateX(0px);
     }
-    10%{
-        transform: translateX(-410px);
-    }
     15%{
-        transform: translateX(-410px);
+        transform: translateX(-230px);
     }
     20%{
-        transform: translateX(-650px);
-    }
-    25%{
-        transform: translateX(-650px);
+        transform: translateX(-230px);
     }
     30%{
-        transform: translateX(-950px);
+        transform: translateX(-480px);
     }
     35%{
-        transform: translateX(-950px);
-    }
-    40%{
-        transform: translateX(-1200px);
+        transform: translateX(-480px);
     }
     45%{
-        transform: translateX(-1200px);
-    }
-    50%{
-        transform: translateX(-1450px);
+        transform: translateX(-720px);
     }
     55%{
-        transform: translateX(-1450px);
+        transform: translateX(-720px);
     }
     60%{
-        transform: translateX(-1700px);
+        transform: translateX(-960px);
     }
-    65%{
-        transform: translateX(-1700px);
+    70%{
+        transform: translateX(-960px);
     }
-} */
+    75%{
+        transform: translateX(-1200px);
+    }
+    80%{
+        transform: translateX(-1200px);
+    }
+    90%{
+        transform: translateX(-1430px);
+    }
+    100%{
+        transform: translateX(-1660px);
+    }
+}
 
 .accompagnement {
     background-color: #f1f0f3;
@@ -528,16 +537,24 @@ section .besoin h1 span {
     padding-bottom: 100px;
 }
 
+.produit-produit-image{
+    display: flex;
+    overflow: hidden;
+}
+
 .produit .produit-flex-row{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
+    width: 90%;
 }
 
 .produit-image{
     font-family: 'Montserrat-Light';
     font-size: 15.2px;
     line-height: 16.8px;
+    animation: flotter-produit 15s infinite;
 }
 
 .produit .produit-flex-row .produit-image img{
@@ -615,6 +632,53 @@ section .besoin h1 span {
     border-radius: 3px;
 }
 
+/*Animation ce que nous avons développer*/
+
+@keyframes flotter-produit{
+    0%{
+        transform: translateX(0%);
+    }
+    7%{
+        transform: translateX(0%);
+    }
+    15%{
+        transform: translateX(-100%);
+    }
+    23%{
+        transform: translateX(-100%);
+    }
+    31%{
+        transform: translateX(-200%);
+    }
+    39%{
+        transform: translateX(-200%);
+    }
+    47%{
+        transform: translateX(-300%);
+    }
+    55%{
+        transform: translateX(-300%);
+    }
+    63%{
+        transform: translateX(-400%);
+    }
+    71%{
+        transform: translateX(-400%);
+    }
+    79%{
+        transform: translateX(-500%);
+    }
+    87%{
+        transform: translateX(-500%);
+    }
+    95%{
+        transform: translateX(-600%);
+    }
+    100%{
+        transform: translateX(-600%);
+    }
+}
+
 .produit-flex-row button{
     background-color: #fff;
     width: 20px;
@@ -624,6 +688,7 @@ section .besoin h1 span {
     border: none;
     border-radius: 100px;
     color: #d92950;
+    margin: 0 5px;
 }
 
 .produit-flex-row button:focus{
@@ -710,7 +775,7 @@ section .besoin h1 span {
     display: flex;
     flex-direction: column;
     width: 500px;
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left: 40px;
     background-color: #f1f0f3;
     border-bottom-right-radius: 20px;
@@ -724,7 +789,6 @@ section .besoin h1 span {
     font-size: 28px;
     font-weight: 700;
     padding: 20px 20px;
-    margin-top: 10px;
 }
 
 .softskill ol{
@@ -763,7 +827,7 @@ section .besoin h1 span {
     color: #fff;
     background-color: #d92950;
     text-decoration: none;
-    padding: 25px 30px;
+    padding: 17px 25px;
     border-radius: 15px;
     border: solid 2px #d92950;
 }
@@ -776,7 +840,7 @@ section .besoin h1 span {
     color: #fff;
     background-color: #ae3753;
     text-decoration: none;
-    padding: 25px 30px;
+    padding: 17px 25px;
     border-radius: 15px;
     border: solid 2px #fff;
 }
@@ -793,9 +857,10 @@ section .besoin h1 span {
 .pre-cont-img{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 85%;
+    position: relative;
 }
 
 .img-par>.img{
@@ -842,7 +907,7 @@ section .besoin h1 span {
     display: flex;
     flex-direction: row;
     position: relative;
-    left: 80px;
+    left: 75px;
 }
 
 .pre-cont-img .call{
@@ -855,6 +920,11 @@ section .besoin h1 span {
     height: 17.67px;
 }
 
+#onboarding-child{
+    position: relative;
+    left: 85px;
+}
+
 #usergroup{
     width: 34px;
     height: 32.86px;
@@ -865,7 +935,7 @@ section .besoin h1 span {
     height: 20px;
     position: relative;
     top: 20px;
-    left: 40px;
+    left: 35px;
 }
 
 .fleche1{
@@ -873,7 +943,7 @@ section .besoin h1 span {
     height: 20px;
     position: relative;
     top: 20px;
-    left: 10px;
+    left: 5px;
 }
 
 .cont-img p{
@@ -883,6 +953,10 @@ section .besoin h1 span {
     font-weight: 700;
     text-align: center;
     color: #fff;
+}
+
+#onboarding{
+    margin-left: 70px;
 }
 
 .section5{
