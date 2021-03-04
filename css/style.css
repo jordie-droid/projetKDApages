@@ -1121,7 +1121,7 @@ form{
 .element1 .sous-element input{
     margin-bottom: 10px;
     width: 550px;
-    height: 10px;
+    height: 15px;
     padding: 10px;
     font-family: 'roboto-regular';
     font-size: 16px;
@@ -1130,7 +1130,7 @@ form{
 .element1 .sous-element select{
     margin-bottom: 10px;
     width: 574px;
-    height: 35px;
+    height: 40px;
     padding: 10px;
     font-family: 'roboto-regular';
     font-size: 16px;
@@ -1154,7 +1154,7 @@ form{
 .element2 select{
     margin-bottom: 10px;
     width: 1165px;
-    height: 35px;
+    height: 40px;
     padding: 10px;
     font-family: 'roboto-regular';
     font-size: 16px;
@@ -1243,6 +1243,7 @@ form{
     justify-content: center;
     align-items: center;
     padding: 100px 0;
+    padding-left: 40px;
 }
 
 .soutien>p{
@@ -1370,13 +1371,18 @@ address{
     font-size: 16px;
     font-weight: bold;
     position: relative;
-    right: 6px;
+    right: 4px;
     background-color: #d92950;
     color: #ffffff;
     border: none;
     padding: 0 25px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+.mailcont button:hover{
+    background-color: transparent;
+    color: #180027;
 }
 
 .mailcont{
