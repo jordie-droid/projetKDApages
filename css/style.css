@@ -575,7 +575,22 @@ section .besoin h1 span {
 
 .produit-image .image-client a{
     color: #fff;
+    /* background-color: #ed0058; */
     text-decoration: none;
+}
+
+.produit-image .image-client a::after{
+    content: '';
+    background-color: #ed0058;
+    color: #fff;
+    width: 0;
+    height: 2px;
+    text-decoration: none;
+}
+
+.produit-image .image-client a:hover::after{
+    width: 100%;
+    transition: width .3s;
 }
 
 .produit-client{
@@ -814,7 +829,6 @@ section .besoin h1 span {
     background-color: #ae3753;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding-bottom: 100px;
 }
@@ -857,7 +871,7 @@ section .besoin h1 span {
 .pre-cont-img{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 85%;
     position: relative;
